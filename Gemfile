@@ -34,4 +34,5 @@ gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 
 gem "github-pages"
 gem "minimal-mistakes-jekyll"
+gem 'jekyll-include-cache'
 
