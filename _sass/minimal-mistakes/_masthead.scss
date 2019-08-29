@@ -11,6 +11,8 @@
   animation-delay: 0.15s;
   z-index: 20;
 
+  font-weight: bold;
+
   &__inner-wrap {
     @include clearfix;
     margin-left: auto;
@@ -28,11 +30,11 @@
     @include breakpoint($x-large) {
       max-width: $max-width;
     }
-
+    
     nav {
       z-index: 10;
     }
-
+    
     a {
       text-decoration: none;
     }
