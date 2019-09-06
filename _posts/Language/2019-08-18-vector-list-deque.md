@@ -6,7 +6,7 @@ title: "벡터/리스트/데크"
 categories:
   - Language
 tags:
-  - [C++]
+  - [C++, vector, list, deque, container]
 
 ---
 
