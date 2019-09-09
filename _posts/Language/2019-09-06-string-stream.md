@@ -5,7 +5,7 @@ title: "문자열 자르기"
 categories:
   - Language
 tags:
-  - [C++, sstream, string, split]
+  - [C++, sstream, String, Split]
 
 ---
 
