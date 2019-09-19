@@ -5,7 +5,7 @@ title: "스마트 포인터/메모리 풀 (Smart Pointer/Memory Pool)"
 categories:
   - Language
 tags:
-  - [C++, pointer, smartpointer, memorypool]
+  - [C++, Pointer, SmartPointer, MemoryPool]
 
 
 ---
