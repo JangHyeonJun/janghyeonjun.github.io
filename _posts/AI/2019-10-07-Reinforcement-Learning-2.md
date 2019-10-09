@@ -74,11 +74,3 @@ tags:
 
     ![](https://user-images.githubusercontent.com/18680116/66311264-05297c00-e949-11e9-8e92-923e11d3d960.png)
 
-  
-
-
-- - [모델 프리, Q 러닝 복습](http://www.modulabs.co.kr/RL_library/2621)
-- 강화학습 알고리즘 종류와 특징 알아내기, 내 논문에서 쓴 알고리즘 이해하기
-  - '파이썬과 케라스로 배우는 강화학습' 읽기
-
-
