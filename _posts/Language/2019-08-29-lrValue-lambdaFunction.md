@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "i-value, r-value, 람다 함수"
+title: "l-value, r-value, 람다 함수"
 categories:
   - Language
 tags:
