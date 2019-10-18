@@ -23,12 +23,12 @@
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    padding-right: 10px;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    padding-right: 10px;
   }
 
   .page__inner-wrap {
@@ -149,16 +149,16 @@
     a {
       color: #fff;
     }
-
+    
     .wrapper {
       padding-left: 1em;
       padding-right: 1em;
-
+    
       @include breakpoint($x-large) {
         max-width: $x-large;
       }
     }
-
+    
     .page__title,
     .page__meta,
     .page__lead,
@@ -166,14 +166,14 @@
       color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
-
+    
     .page__lead {
       max-width: $medium;
     }
-
+    
     .page__title {
       font-size: $type-size-2;
-
+    
       @include breakpoint($small) {
         font-size: $type-size-1;
       }
@@ -314,7 +314,7 @@
 
   + .taxonomy__section {
     margin-top: 2em;
-  }
+    }
 }
 
 .taxonomy__title {
