@@ -6,7 +6,7 @@ title: "강화학습 - Reinforcement Learning(4)"
 categories:
   - AI
 tags:
-  - [MonteCarlo, TemporalDifference, SALSA, e-Greedy, Prediction, Control]
+  - [Q-Learning, MonteCarlo, TemporalDifference, SALSA, e-Greedy, Prediction, Control]
 ---
 
 - ## [인공지능] 큐 러닝 (Q-Learning)과 전통적 강화학습
@@ -113,4 +113,4 @@ tags:
   
   
   
-   큐러닝은 살사의 **탐험-최적 정책 결정 문제**를 정책을 분리함으로써 해결하였다. 다른 오프폴리시 강화학습과 달리 큐함수가 간단하기 때문에 강화학습 알고리즘의 토대로 사용되었다.
+   큐러닝은 살사의 탐험과 최적 정책을 결정하는 딜레마(**탐색-이용 딜레마, Exploration-exploitation dilemma**)를 정책을 분리함으로써 해결하였다. 다른 오프폴리시 강화학습과 달리 큐함수가 간단하기 때문에 강화학습 알고리즘의 토대로 사용되었다.
