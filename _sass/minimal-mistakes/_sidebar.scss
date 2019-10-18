@@ -26,7 +26,7 @@
     &:hover {
       opacity: 1;
     }
-
+    
     &.sticky {
       overflow-y: auto;
       /* calculate height of nav list
@@ -57,7 +57,7 @@
   p,
   li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: 1.0em;
     line-height: 1.5;
   }
 
@@ -167,7 +167,7 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: 1.2em; // 프로필 이름 폰트 크기
 }
 
 .author__bio {
@@ -280,7 +280,7 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: 0.9em;
     text-decoration: none;
 
     &:hover {
