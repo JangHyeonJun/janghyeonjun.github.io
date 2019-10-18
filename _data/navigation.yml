@@ -3,10 +3,9 @@ main:
 
   - title: "아카이브"
     url: /year-archive/
-  - title: "태그"
-    url: /tags/
   - title: "카테고리"
     url: /categories/
-
+  - title: "태그"
+    url: /tags/
   - title: "원본 깃허브 저장소로 이동"
     url: https://github.com/JangHyeonJun/janghyeonjun.github.io
