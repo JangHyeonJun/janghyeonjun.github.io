@@ -6,7 +6,7 @@ title: "기계학습 - Machine Learning"
 categories:
   - AI
 tags:
-  - [ML, MachineLearning, SupervisedLearning, Regression, LinearRegression, GradientDescent]
+  - [ML, MachineLearning, SupervisedLearning, Regression, LinearRegression, LogisticRegression, GradientDescent]
 ---
 
 - ## [인공지능] 기계학습
@@ -25,7 +25,9 @@ tags:
   
     - **회귀**(Regression) : 들어온 입력 X에 대해 예측하여 출력 Y를 준다. 출력 값은 **연속적**이다. (*e.g. 시험 점수 예측*)
   
-      - **선형회귀**(Linear Regression) : 학습 데이터를 잘 나타내는 **가설**(Hypothesis, Y = Wx + b)을 찾는 것. **비용 함수**(Cost Function)를 통해 얻은 **비용**(Cost)이 가장 작은 **W**와 **b**를 찾는 것이 **학습**의 **목표**(Goal)이다.
+      - **선형 회귀**(Linear Regression) : 학습 데이터를 잘 나타내는 **가설**(Hypothesis, Y = Wx + b)을 찾는 것. **비용 함수**(Cost Function)를 통해 얻은 **비용**(Cost)이 가장 작은 **W**와 **b**를 찾는 것이 **학습**의 **목표**(Goal)이다.
+      - **로지스틱 회귀분석**(Logistic Regression) : 선형회귀로 나온 값을 함수를 통해 0~1 사이의 값으로 바꾸어 분석한다.
+      - 로지스틱함수(Logistic Function) : 
   
     - **분류**(Classfication) : 들어온 입력 X에 대하여 어떤 그룹에 속하는지 분류해준다. (*e.g. 시험 등급 예측*)
   
