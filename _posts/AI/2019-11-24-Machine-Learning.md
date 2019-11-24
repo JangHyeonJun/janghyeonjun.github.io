@@ -6,7 +6,7 @@ title: "기계학습 - Machine Learning"
 categories:
   - AI
 tags:
-  - [ML, MachineLearning, SupervisedLearning, Regression, LinearRegression, LogisticRegression, GradientDescent]
+  - [ML, MachineLearning, SupervisedLearning, Regression, LinearRegression, LogisticRegression, Classification, BinaryClassification, MultinomialClassification, CostFunction, CrossEntropy, GradientDescent]
 ---
 
 - ## [인공지능] 기계학습
@@ -27,11 +27,15 @@ tags:
   
       - **선형 회귀**(Linear Regression) : 학습 데이터를 잘 나타내는 **가설**(Hypothesis, Y = Wx + b)을 찾는 것. **비용 함수**(Cost Function)를 통해 얻은 **비용**(Cost)이 가장 작은 **W**와 **b**를 찾는 것이 **학습**의 **목표**(Goal)이다.
       - **로지스틱 회귀분석**(Logistic Regression) : 선형회귀로 나온 값을 함수를 통해 0~1 사이의 값으로 바꾸어 분석한다.
-      - 로지스틱함수(Logistic Function) : 
-  
+      
     - **분류**(Classfication) : 들어온 입력 X에 대하여 어떤 그룹에 속하는지 분류해준다. (*e.g. 시험 등급 예측*)
   
-    - **비용 함수**(Cost Function) **또는 손실 함수**(Loss Function) : 입력에 대하여 기계가 예측하는 가설(Hypothesis)과 실제 결과 값의 차이(Error)를 계산하는 함수. (*e.g. 평균 제곱 오차, Mean Squared Error, MSE*)
+      - **이항 분류**(Binary Classification) 또는 **로지스틱 분류**(Logistic Classification) : 로지스틱 회귀를 통해 나온 0~1 사이의 값에 경계(Boundary)를 두어 참, 거짓으로 분류한다.
+      - **다항 분류**(Multinomial Classification) : 여러개의 로지스틱 값들이 나올 때 **소프트맥스**(Softmax) 함수를 통해 각 값들의 합이 1이 되도록 만들고 **원-핫 인코딩**(One-Hot Encoding)을 통해 가장 높은 숫자만 1로 만들고 나머지는 0으로 만들어 분류한다.
+  
+    - **비용 함수**(Cost Function) **또는 손실 함수**(Loss Function) : 입력에 대하여 기계가 예측하는 가설(Hypothesis)과 실제 결과 값의 차이(Error)를 계산하는 함수. (*e.g. 회귀에서 주로 쓰이는 **평균 제곱 오차**, Mean Squared Error, MSE*) (*e.g. 분류에서 주로 쓰이는 **크로스 엔트로피**, Cross Entropy*)
+  
+    - **크로스 엔트로피**(Cross Entropy) : 분류에서 **MSE**를 사용할 경우 **학습의 속도가 느리고 멈출 수 있으며**, **지역 최소화 문제**가 생긴다.  이를 해결하기 위해 hypothesis 가 label과 같을 경우 0, 다를 경우 매우 큰 오차를 주는 비용 함수이다.
   
     - **경사하강법**(Gradient Descent) : 비용함수를 최소화 하는 알고리즘. W와 b 변수들에 대해 **미분**하여 기울기 구하고, 비용을 최소화 시키는 방향으로 **학습률**(Learning Rate) 만큼 변경한다. 
   
