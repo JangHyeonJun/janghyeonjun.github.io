@@ -6,7 +6,7 @@ title: "기계학습 - Machine Learning"
 categories:
   - AI
 tags:
-  - [ML, MachineLearning, SupervisedLearning, Regression, LinearRegression, LogisticRegression, Classification, BinaryClassification, MultinomialClassification, CostFunction, CrossEntropy, GradientDescent]
+  - [ML, MachineLearning, SupervisedLearning, Regression, LinearRegression, LogisticRegression, Classification, BinaryClassification, MultinomialClassification, CostFunction, CrossEntropy, GradientDescent, Overfitting, Underfitting]
 ---
 
 - ## [인공지능] 기계학습
@@ -37,7 +37,11 @@ tags:
   
     - **크로스 엔트로피**(Cross Entropy) : 분류에서 **MSE**를 사용할 경우 **학습의 속도가 느리고 멈출 수 있으며**, **지역 최소화 문제**가 생긴다.  이를 해결하기 위해 hypothesis 가 label과 같을 경우 0, 다를 경우 매우 큰 오차를 주는 비용 함수이다.
   
-    - **경사하강법**(Gradient Descent) : 비용함수를 최소화 하는 알고리즘. W와 b 변수들에 대해 **미분**하여 기울기 구하고, 비용을 최소화 시키는 방향으로 **학습률**(Learning Rate) 만큼 변경한다. 
+    - **경사하강법**(Gradient Descent) : 비용함수를 최소화 하는 알고리즘. W와 b 변수들에 대해 **미분**하여 기울기 구하고, 비용을 최소화 시키는 방향으로 **학습률**(Learning Rate) 만큼 변경한다.
+  
+    - **오버피팅**(Overfitting) : 모델이 실제 분포보다 학습 데이터의 분포에 근접하게 학습되는 현상. 이를 피하는 방법을 **정규화**(Regulariztion)라고 한다.
+  
+    - **언더피팅**(Underfitting) : 모델이 너무 단순하여 **학습 오류**(cost)가 줄어들지 않는 현상. 모델에 **특성**(feature) x 를 추가하여 해결한다. 그러나 특성이 너무 많으면 오버피팅이 발생한다.
   
       
   
