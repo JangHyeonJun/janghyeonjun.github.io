@@ -3,7 +3,7 @@ layout: single
 
 title: "다각형 면적 구하기"
 categories:
-  - Network
+  - Math
 tags:
   - [Polygon, Area, Math, Mathematics]
 use_math : true
