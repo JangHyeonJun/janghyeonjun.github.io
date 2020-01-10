@@ -4,39 +4,26 @@ layout: single
 
 title: "벡터/리스트/데크"
 categories:
-  - Language
+  - Data
 tags:
-  - [C++, vector, list, deque, container]
+  - [C++, SequenceContainer, vector, list, deque, container]
 
 ---
 
 - ##  [C++] 벡터/리스트/데크  
 
-  ### STL 컨테이너(container)
+  ### STL 시퀀스 컨테이너(sequence container)
 
-  컨테이너는 크게 2 종류로 나누어진다.
+  **시퀀스 컨테이너** (Sequence Container) : 인덱스에 따라 원소를 순서대로 보관하는 컨테이너로써 **vector**, **list**, **deque** 등이 있다. 차례대로 원소를 추가/제거 하는 **push, pop**과 첫/마지막 원소를 참조하는 **front,back** 함수, 지정한 위치(반복자를 통해)에 원소를 삽입하는 **insert** 함수를 가진다.
   
-  - 시퀀스 컨테이너(Sequence Container) : 인덱스에 따라 원소를 순서대로 보관하는 컨테이너로써 vector, list, deque 등이 있다.
-- 연관 컨테이너(Associative ) : 키(key) - 값(value) 구조를 가지는 컨테이너로써 set, map, hash 등이 있다.
-  - 
-
-  #### 범위 기반 for 문 (range based for loop)
-
-  C++ 11 에서 컨테이너의 원소를 반복하는 패턴을 간단하게 나타낼 수 있는 새로운 방식
   
-  ```
-  for (const auto& data : vec)
-  std::cout <<< "원소 값 : " << data << std::endl;
-  ```
-	
   
-
   #### vector
-
+  
   가변 배열과 같다고 생각하면 된다.
-
+  
   - 시간복잡도
-
+  
     - 임의의 위치 원소 접근 ***O(1)***
   
     - 맨 뒤에 원소 추가 및 제거 ***amortized O(1)*** (평균적으로 ***O(1)*** 이지만, 메모리 재할당을 할경우 ***O(n)***)
@@ -47,7 +34,7 @@ tags:
   
   #### list
   
-  양방향 리스트로 구현되어 있으며, 반복자를 사용할 때 1칸씩 밖에 이동하지 못한다.
+  노드기반 컨테이너, 이중 연결 리스트로 구현되어 있으며, 반복자를 사용할 때 1칸씩 밖에 이동하지 못한다.
   
   - 시간복잡도
   
