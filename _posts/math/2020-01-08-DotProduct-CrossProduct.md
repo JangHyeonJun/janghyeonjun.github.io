@@ -1,11 +1,11 @@
 ---
 layout: single
 
-title: "벡터(Vector)"
+title: "내적과 외적(Dot Product & Cross Product)"
 categories:
   - Math
 tags:
-  - [Vector, Math, Mathematics]
+  - [DotProduct, CrossProduct, Math, Mathematics]
 use_math : true
 ---
 
