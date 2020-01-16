@@ -5,7 +5,7 @@ title: "네트워크 용어 정리"
 categories:
   - Network
 tags:
-  - [Network, Terminology, Server]
+  - [Network, Terminology, Server, Socket, Port]
 ---
 
 ***[20.01.08 updated]***
@@ -81,3 +81,20 @@ e.g. AWS, Photon
 
 서버의 성능을 업그레이드 하거나(Up), 서버의 개수를 늘리는 것(Out).
 
+
+
+#### 포트번호(Port Number)
+
+호스트(네트워크에 연결되어 IP 주소가 할당된 노드) 내에서 주고받는 데이터가 어느 프로세스에게 가야하는지를 식별하기 위한 고유 값.
+
+
+
+#### 소켓(Socket)
+
+프로세스가 네트워크를 사용하기 위해 필요한 일종의 객체. IP 주소 / 포트 번호 / 프로토콜을 설정해야한다. 여러개의 소켓을 만들어 다중 통신을 할 수 있다.
+
+
+
+#### 라우터(Router)
+
+논리적으로 분리된 망에서 최상의 경로를 찾아 다른 망으로 패킷을 중계해주는 기계.
