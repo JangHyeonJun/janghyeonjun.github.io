@@ -9,40 +9,40 @@ tags:
 
 ---
 
-- ## [C++] string 클래스 함수 (find, substr, erase) 를 통해 자르기
+## [C++] string 클래스 함수 (find, substr, erase) 를 통해 자르기
 
-  자르고 싶은 문자열에서 구분자(delimiter)를 find함수를 통해 찾고 옮겨 담는 형식으로 구현하였습니다.
-  
-  인터넷 상에 문자열 나누기 코드는 여러 종류가 있으니 취향에 맞게 골라서 사용하시면 됩니다. 제가 짠 코드의 경우, string 라이브러리만 사용하면 된다는 장점이 있습니다.
-  
-  ```
-  #include <iostream>
-  #include <string>
-  using namespace std;
-  int main()
-  {
-  	string s1 = "apple/grape/pear";
-  	string s2;
-  	char delimiter = '/';
-  	while (!s1.empty())
-  	{
-  		if (s1.find(delimiter) != string::npos)
-  		{
-  			s2 = s1.substr(0, s1.find(delimiter));
-  			s1.erase(s1.begin(), s1.begin() + s2.length() + 1);
-  		}
-  		else
-  		{
-  			s2 = s1;
-  			s1.clear();
-  		}
-  		cout << s2 << endl;
-  	}
-  }
-  ```
-  
-  
-  
+자르고 싶은 문자열에서 구분자(delimiter)를 find함수를 통해 찾고 옮겨 담는 형식으로 구현하였습니다.
+
+인터넷 상에 문자열 나누기 코드는 여러 종류가 있으니 취향에 맞게 골라서 사용하시면 됩니다. 제가 짠 코드의 경우, string 라이브러리만 사용하면 된다는 장점이 있습니다.
+
+```
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	string s1 = "apple/grape/pear";
+	string s2;
+	char delimiter = '/';
+	while (!s1.empty())
+	{
+		if (s1.find(delimiter) != string::npos)
+		{
+			s2 = s1.substr(0, s1.find(delimiter));
+			s1.erase(s1.begin(), s1.begin() + s2.length() + 1);
+		}
+		else
+		{
+			s2 = s1;
+			s1.clear();
+		}
+		cout << s2 << endl;
+	}
+}
+```
+
+
+
 - ## [C++] String Stream(sstream) 을 통해 자르기
 
    C++ 에서 사용하는 모든 입출력은 `ios_base` 를 기반 클래스로 하며 입출력에 사용되는 데이터를 커다란 하나의 스트림(stream)으로 묶어 스트림 버퍼에 저장해 놓은 후, 사용자가 요청할 때마다 ***n***바이트 씩 꺼내서 입력하거나 출력을 하게 된다. 
