@@ -1,7 +1,7 @@
 ---
 layout: single
 
-title: "C# 프로그래밍 기법(1)"
+title: "C# 프로그래밍 기법"
 categories:
   - Language
 tags:
@@ -13,6 +13,8 @@ tags:
 ## C# 프로그래밍 기법
 
 *이 포스팅은 Effective C# 을 읽고 내용을 정리하기 위한 스터디용 포스팅입니다. 실제 내용과 다를 수 있으니 본 책을 직접 구매하셔서 읽는 것을 추천합니다.*
+
+***(update 20.04.15)***
 
  
 
