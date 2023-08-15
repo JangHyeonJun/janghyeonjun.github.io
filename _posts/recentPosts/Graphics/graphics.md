@@ -6,4 +6,4 @@ has_children: true
 permalink: docs/graphics
 ---
 
-자료구조
+그래픽스

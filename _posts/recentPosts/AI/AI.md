@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Issue
+title: AI
 nav_order: 4
 has_children: true
-permalink: docs/issue
+permalink: docs/AI
 ---
 
-자료구조
+AI

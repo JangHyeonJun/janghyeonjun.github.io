@@ -1,9 +1,9 @@
 ---
 layout: default
-title: AI
+title: OS
 nav_order: 4
 has_children: true
-permalink: docs/AI
+permalink: docs/os
 ---
 
-dddd
+운영체제

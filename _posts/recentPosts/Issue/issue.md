@@ -1,9 +1,9 @@
 ---
 layout: default
-title: OS
+title: Issue
 nav_order: 4
 has_children: true
-permalink: docs/os
+permalink: docs/issue
 ---
 
-자료구조
+이슈 정리

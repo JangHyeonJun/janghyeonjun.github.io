@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Language
+title: Math
 nav_order: 4
 has_children: true
-permalink: docs/language
+permalink: docs/math
 ---
 
-자료구조
+수학

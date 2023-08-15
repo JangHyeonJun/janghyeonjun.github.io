@@ -6,4 +6,4 @@ has_children: true
 permalink: docs/design
 ---
 
-자료구조
+디자인패턴

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Network
+title: .NET
 nav_order: 4
 has_children: true
-permalink: docs/network
+permalink: docs/dotnet
 ---
 
-자료구조
+닷넷

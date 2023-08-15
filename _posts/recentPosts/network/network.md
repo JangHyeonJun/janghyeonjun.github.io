@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Math
+title: Network
 nav_order: 4
 has_children: true
-permalink: docs/math
+permalink: docs/network
 ---
 
-자료구조
+네트워크
