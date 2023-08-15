@@ -34,3 +34,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "just-the-docs"
 gem "jekyll-github-metadata"
+gem "faraday-retry"
