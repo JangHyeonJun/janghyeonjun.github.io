@@ -1,7 +1,31 @@
 // Typography
 
+// 나눔스퀘어체 추가
+@font-face {
+  font-family: 'Nanum Square';
+  src: url('/assets/fonts/NanumSquareB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 나눔고딕 코딩체 추가
+@font-face {
+  font-family: 'Nanum Godic Coding';
+  src: url('/assets/fonts/D2CodingBold-Ver1.3.2-20180524.ttf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 비트비트체 추가
+@font-face {
+  font-family: 'bitbit';
+  src: url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff') format('woff'),
+       url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') format('woff2');
+}
+@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic-coding.css');
+
 // prettier-ignore
-$body-font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
+$body-font-family: 'Nanum Square', system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
   roboto, "Helvetica Neue", arial, sans-serif !default;
 $mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
 $root-font-size: 16px !default; // DEPRECATED: previously base font-size for rems

@@ -74,7 +74,7 @@ a:not([class]) {
 }
 
 code {
-  font-family: $mono-font-family;
+  font-family: 'Nanum Godic Coding', $mono-font-family;
   font-size: 0.75em;
   line-height: $body-line-height;
 }
@@ -110,4 +110,12 @@ blockquote {
   margin-inline-start: 0;
   padding-left: 1rem;
   border-left: 3px solid $border-color;
+}
+
+// 타이틀 클래스에 bitbit체 적용
+.bitbit-title {
+  font-family: 'bitbit', sans-serif; /* 비트비트체 우선 사용, 안되면 다음 폰트 사용 */
+  white-space: nowrap;
+  vertical-align: bottom;
+  margin-top: 40px; /* 블로그 제목이 짤릴 수 있어서 위에 빈공간을 줌 */
 }

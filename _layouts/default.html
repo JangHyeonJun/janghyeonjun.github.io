@@ -26,16 +26,26 @@ layout: table_wrappers
             {% include components/children_nav.html %}
           {% endif %}
         </main>
-        {% include components/footer.html %}
       </div>
     </div>
     {% if site.search_enabled != false %}
       {% include components/search_footer.html %}
     {% endif %}
+
+    {% if site.mermaid %}
+      {% include components/mermaid.html %}
+    {% endif %}
+
+    <script src="https://utteranc.es/client.js"
+      repo="JangHyeonJun/janghyeonjun.github.io"
+      issue-term="url"
+      label="Comment"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
   </div>
 
-  {% if site.mermaid %}
-    {% include components/mermaid.html %}
-  {% endif %}
+  {% include components/footer.html %}
 </body>
 </html>
