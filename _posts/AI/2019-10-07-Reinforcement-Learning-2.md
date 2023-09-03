@@ -7,7 +7,7 @@ title: "강화학습 - Reinforcement Learning(2)"
 categories:
   - AI
 tags:
-  - [ModelFreeControl, Q-Learning]
+  - [ModelFreeControl, qLearning]
 ---
 
 - ## [인공지능] Model Free & Q-Learning

@@ -7,7 +7,7 @@ title: "강화학습 - Reinforcement Learning(4)"
 categories:
   - AI
 tags:
-  - [Q-Learning, MonteCarlo, TemporalDifference, SALSA, e-Greedy, Prediction, Control]
+  - [qLearning, MonteCarlo, TemporalDifference, SALSA, eGreedy, Prediction, Control]
 ---
 
 - ## [인공지능] 큐 러닝 (Q-Learning)과 전통적 강화학습
@@ -30,7 +30,7 @@ tags:
 
   #### 몬테카를로 예측(Monte-Carlo Prediction)
 
-   ***i*** 번째 에피소드에서 상태 ***s*** 를 샘플링하고 현재 정책 ***π*** 를 따라 행동하며 **반환값**(감가율이 적용된 현재~미래 보상의 합) ***G(s)<sub>i</sub>*** 를 얻어내고 모든 에피소드의 반환값을 평균 내어 ***G(s)*** 를 얻어내고 이 반환값을 목표로 가치함수를 업데이트한다. 업데이트를 계속하면 참 가치함수를 얻을 수 있다.
+   ***i*** 번째 에피소드에서 상태 ***s*** 를 샘플링하고 현재 정책을 따라 행동하며 **반환값**(감가율이 적용된 현재~미래 보상의 합) ***G(s)<sub>i</sub>*** 를 얻어내고 모든 에피소드의 반환값을 평균 내어 ***G(s)*** 를 얻어내고 이 반환값을 목표로 가치함수를 업데이트한다. 업데이트를 계속하면 참 가치함수를 얻을 수 있다.
 
    결국 ***V(s)*** 는 업데이트하려는 크기를 나타내는 **스탭사이즈** ***a*** 만큼 계속 업데이트 된다. 다음은 몬테카를로 예측을 통해 가치함수가 업데이트 되는 과정을 수식으로 나타낸 것이다.
 
