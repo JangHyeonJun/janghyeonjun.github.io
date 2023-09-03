@@ -12,8 +12,6 @@ tags:
 
 - ## [인공지능] Model Free & Q-Learning
 
-  정리한 내용의 많은 부분은 [모두의 코드 OpenRL](http://www.modulabs.co.kr/RL) 을 참고하였습니다.
-
   - **Dynamic Programming**
 
     강화학습의 토대가 되는 동적 프로그래밍(Dynamic Programming)은 **학습이 아니라** 전체 큰 문제를 작은 문제로 나누어 풀 수 있도록 계획하여 연산을 빠르게 하는 것. 정책 반복(Policy Iteration)과 가치 반복(Value Iteration)에서 사용된다.

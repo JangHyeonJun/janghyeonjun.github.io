@@ -12,7 +12,7 @@ tags:
 
 - ## [인공지능] 역강화학습
 
-  *[모방학습](ai/Imitation-Learning/)을 먼저 보고 오시면 좋습니다 !*
+  *모방학습을 먼저 보고 오시면 좋습니다 !*
 
   참고자료: [IRL 논문 1][http://ai.stanford.edu/~ang/papers/icml00-irl.pdf][^1] , [IRL 논문 2](http://ai.stanford.edu/~ang/papers/icml04-apprentice.pdf)[^2], [RLkorea 논문 리뷰](https://reinforcement-learning-kr.github.io/2019/01/28/1_linear-irl/), [PR-029 리뷰 영상](https://youtu.be/AXi4s3aFN6M)
 
