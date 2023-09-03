@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Math
 title: "분산과 표준편차(Variance & Standard Deviation)"

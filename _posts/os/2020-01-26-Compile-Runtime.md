@@ -1,5 +1,5 @@
 ---
-layout: default
+
 parent: OS
 title: "컴파일/런 타임 (Compile/Run Time)"
 categories:

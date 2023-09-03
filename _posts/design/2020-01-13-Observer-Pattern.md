@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Design Pattern
 title: "관찰자 패턴(Observer Pattern)"

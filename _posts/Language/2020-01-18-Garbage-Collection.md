@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Language
 title: "가비지 컬렉션(Garbage Collection)"

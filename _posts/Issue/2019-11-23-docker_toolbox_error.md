@@ -1,5 +1,5 @@
 ---
-layout: default
+
 parent: Issue
 title: "Docker Toolbox pre-create check Error"
 categories:

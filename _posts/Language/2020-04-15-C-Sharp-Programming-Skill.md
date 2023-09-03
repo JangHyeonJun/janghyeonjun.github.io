@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Language
 title: "C# 프로그래밍 기법"

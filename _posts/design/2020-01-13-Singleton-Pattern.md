@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Design Pattern
 title: "싱글턴 패턴(Singleton Pattern)"

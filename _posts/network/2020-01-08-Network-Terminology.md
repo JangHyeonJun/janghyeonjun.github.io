@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Network
 title: "네트워크 용어 정리"

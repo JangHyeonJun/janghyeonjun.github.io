@@ -1,5 +1,5 @@
 ---
-layout: default
+
 parent: Computer graphics
 title: "행렬 변환(Matrix Transform)"
 categories:

@@ -1,6 +1,6 @@
 ---
 
-layout: default
+
 
 parent: AI
 title: "역 강화학습 - Inverse Reinforcement Learning"

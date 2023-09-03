@@ -1,5 +1,5 @@
 ---
-layout: default
+
 parent: Computer graphics
 title: "렌더링 파이프라인(Rendering Pipeline)"
 categories:

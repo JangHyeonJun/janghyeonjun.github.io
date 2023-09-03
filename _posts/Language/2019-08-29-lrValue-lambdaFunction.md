@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Language
 title: "l-value, r-value, 람다 함수"

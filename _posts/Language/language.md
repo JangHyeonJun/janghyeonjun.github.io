@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Language
 nav_order: 4
 has_children: true

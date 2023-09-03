@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Language
 title: "스마트 포인터/메모리 풀 (Smart Pointer/Memory Pool)"

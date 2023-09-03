@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Language
 title: "문자열 자르기"

@@ -1,6 +1,6 @@
 ---
 
-layout: default
+
 
 parent: Data Structure
 title: "벡터/리스트/데크"

@@ -1,6 +1,6 @@
 ---
 
-layout: default
+
 
 parent: AI
 title: "기계학습 - Machine Learning"

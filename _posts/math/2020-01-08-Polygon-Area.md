@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Math
 title: "다각형 면적 구하기"

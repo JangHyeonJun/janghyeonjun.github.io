@@ -1,6 +1,6 @@
 ---
 
-layout: default
+
 
 parent: AI
 title: "몬테카를로 트리 탐색 - Monte-carlo Tree Search (MCTS)"

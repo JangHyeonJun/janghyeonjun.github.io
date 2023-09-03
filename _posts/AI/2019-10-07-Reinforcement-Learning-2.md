@@ -1,6 +1,6 @@
 ---
 
-layout: default
+
 
 parent: AI
 title: "강화학습 - Reinforcement Learning(2)"

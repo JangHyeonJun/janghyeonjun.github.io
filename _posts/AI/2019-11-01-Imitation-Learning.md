@@ -1,6 +1,6 @@
 ---
 
-layout: default
+
 
 parent: AI
 title: "모방학습 - Imitation Learning"

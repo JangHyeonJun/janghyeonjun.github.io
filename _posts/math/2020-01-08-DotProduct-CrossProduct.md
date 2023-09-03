@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Math
 title: "내적과 외적(Dot Product & Cross Product)"

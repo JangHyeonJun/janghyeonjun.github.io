@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Language
 title: "좌-우측값 레퍼런스(l-value r-value reference)"

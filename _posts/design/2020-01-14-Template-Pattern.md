@@ -1,5 +1,5 @@
 ---
-layout: default
+
 
 parent: Design Pattern
 title: "템플릿 패턴(Template Pattern)"
