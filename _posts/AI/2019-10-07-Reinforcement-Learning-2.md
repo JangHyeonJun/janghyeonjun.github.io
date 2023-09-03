@@ -68,8 +68,6 @@ tags:
     Q Leaning 은 두 가지 policy를 사용하는 off-policy learning 이다. learning에서는 greedy 하게 improve 하고 행동할 때는 ε-Greedy 하게 한다.
 
     이를 알고리즘으로 나타내면 다음과 같다.
-
-    *<참고 : ∀ 는 '모든 ~에 대해'  ∃ 는 '어떤 ~가 존재하여' 라는 의미>*
-
+    
     ![](https://user-images.githubusercontent.com/18680116/66311264-05297c00-e949-11e9-8e92-923e11d3d960.png)
 
