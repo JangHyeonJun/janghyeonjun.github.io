@@ -1,11 +1,11 @@
 ﻿---
+parent: dotnet
 title: "Dynamic PGO (Dynamic Profile Guided Optimization, 동적 프로필 기반 최적화)"
-author: me
 categories: [System]
-tags: [system, dynamic-pgo, pgo, ltcg, compiler, optimization]
-pin: true
-math: true
-mermaid: true
+tags: [system, dynamicPgo, pgo, ltcg, optimization]
+pin: false
+math: false
+mermaid: false
 ---
 
 (.NET 6 기준으로 작성한 포스팅입니다.)

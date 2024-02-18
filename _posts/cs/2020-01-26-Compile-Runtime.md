@@ -1,12 +1,7 @@
 ---
-
-parent: CS
 title: "컴파일/런 타임 (Compile/Run Time)"
-categories:
-  - CS
-tags:
-  - [Compile, Runtime, Compiletime, Preprocessor, Compiler, Linker, ObjectFile, Assembler, DLL, DynamicLinking, Error, Stack, Heap]
-use_math : true
+categories: [CS]
+tags: [Compile, Runtime, Compiletime, Preprocessor, Compiler, Linker, ObjectFile, Assembler, DLL, DynamicLinking, Error, Stack, Heap]
 ---
 
 
