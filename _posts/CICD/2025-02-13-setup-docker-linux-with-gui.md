@@ -2,6 +2,7 @@
 
 parent: CICD
 title: "윈도우즈 환경에서 GUI를 지원하는 Linux 도커 컨테이너 띄우기"
+image: /assets/img/xclock_capture.png
 categories:
   - CICD
 tags:
