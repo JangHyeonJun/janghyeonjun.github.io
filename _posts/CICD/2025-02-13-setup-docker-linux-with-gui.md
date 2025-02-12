@@ -66,7 +66,7 @@ Docker Desktop을 설치해도 무방함, 그러나 무료인 도커 엔진을 �
 2. 윈도우에서 cmd 실행, `ipconfig` 로 ip확인(ipv4)
 3. 리눅스 컨테이너에서 `export DISPLAY=<본인 ip>:0` 입력   
 4. `xclock` 명령어를 쳐서 아래와 같은 시계 화면이 뜨면 성공 
-    ![](img/xclock_capture.png)
+    ![](/assets/img/xclock_capture.png)
 ---
 
   
