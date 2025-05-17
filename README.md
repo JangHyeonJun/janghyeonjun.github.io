@@ -1,1 +1,1 @@
-블로그용 저장소
+[Git Blog](https://janghyeonjun.github.io/)
