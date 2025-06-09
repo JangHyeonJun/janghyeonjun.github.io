@@ -5,7 +5,7 @@
  */
 
 export function imgPopup() {
-  if ($('.popup') <= 0) {
+  if ($('.popup').length <= 0) {
     return;
   }
 
