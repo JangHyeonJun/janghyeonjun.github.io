@@ -1,7 +1,7 @@
 /**
  * Initial Bootstrap Tooltip.
  */
-export function loadTooptip() {
+export function loadTooltip() {
   const tooltipTriggerList = document.querySelectorAll(
     '[data-bs-toggle="tooltip"]'
   );
