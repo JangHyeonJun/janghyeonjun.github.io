@@ -5,21 +5,18 @@
 const $body = $('body');
 const ATTR_DISPLAY = 'sidebar-display';
 
-class SidebarUtil {
-  static isExpanded = false;
+let isExpanded = false;
 
-  static toggle() {
-    if (SidebarUtil.isExpanded === false) {
-      $body.attr(ATTR_DISPLAY, '');
-    } else {
-      $body.removeAttr(ATTR_DISPLAY);
-    }
-
-    SidebarUtil.isExpanded = !SidebarUtil.isExpanded;
+function toggleSidebar() {
+  if (isExpanded) {
+    $body.removeAttr(ATTR_DISPLAY);
+  } else {
+    $body.attr(ATTR_DISPLAY, '');
   }
+  isExpanded = !isExpanded;
 }
 
-export function sidebarExpand() {
-  $('#sidebar-trigger').on('click', SidebarUtil.toggle);
-  $('#mask').on('click', SidebarUtil.toggle);
+export function initSidebarTrigger() {
+  $('#sidebar-trigger').on('click', toggleSidebar);
+  $('#mask').on('click', toggleSidebar);
 }
