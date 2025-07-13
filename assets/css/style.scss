@@ -17,8 +17,8 @@
     }
 
     .preview-img {
-      width: 5rem;
-      height: 5rem;
+      width: 6rem;
+      aspect-ratio: 1;
       margin-right: 1rem;
       overflow: hidden;
       flex-shrink: 0;
@@ -30,23 +30,34 @@
         object-fit: cover;
         border-radius: $base-radius;
       }
+
+      @media (min-width: 768px) {
+        width: 35%;
+        min-width: 8rem;
+      }
     }
 
     .card-body {
+      flex: 1;
       padding: 0;
     }
 
     .card-title {
       @extend %text-clip;
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       margin-bottom: 0.25rem;
     }
 
     .card-text {
       margin-bottom: 0;
+      font-size: 0.85rem;
 
       p {
-        @extend %text-clip;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
         margin: 0;
       }
     }
