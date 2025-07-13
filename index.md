@@ -15,7 +15,7 @@ title: Home
   <a href="{{ post.url | relative_url }}" class="card-wrapper d-block mb-3">
     <div class="card post-preview flex-md-row-reverse">
       {% if post.image %}
-        {% assign src = post.image %}
+        {% assign src = post.image.path | default: post.image %}
         {% unless src contains '//' %}
           {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
         {% endunless %}

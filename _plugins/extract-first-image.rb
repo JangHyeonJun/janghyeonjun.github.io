@@ -1,7 +1,6 @@
-Jekyll::Hooks.register :posts, :post_init do |post|
+Jekyll::Hooks.register :posts, :pre_render do |post|
   next if post.data['image']
-  match = post.content.match(/!\[[^\]]*\]\(([^)]+)\)/)
-  if match
-    post.data['image'] = match[1]
-  end
+  content = post.content.to_s
+  match = content.match(/!\[[^\]]*\]\(([^)]+)\)/)
+  post.data['image'] = match[1] if match
 end
