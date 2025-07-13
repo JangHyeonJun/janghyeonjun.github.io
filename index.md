@@ -19,7 +19,9 @@ title: Home
         {% unless src contains '//' %}
           {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
         {% endunless %}
-        <img src="{{ src }}" w="17" h="10" alt="{{ post.title | xml_escape }}">
+        <div class="preview-img">
+          <img src="{{ src }}" alt="{{ post.title | xml_escape }}">
+        </div>
       {% endif %}
       <div class="card-body d-flex flex-column">
         <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
