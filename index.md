@@ -13,13 +13,15 @@ title: Home
 <div class="mb-4" id="recent-posts">
   {% for post in recent_posts %}
   <a href="{{ post.url | relative_url }}" class="card-wrapper d-block mb-3">
-    <div class="card post-preview flex-md-row-reverse">
+    <div class="card post-preview">
       {% if post.image %}
         {% assign src = post.image.path | default: post.image %}
         {% unless src contains '//' %}
           {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
         {% endunless %}
-        <img src="{{ src }}" w="17" h="10" alt="{{ post.title | xml_escape }}">
+        <div class="preview-img">
+          <img src="{{ src }}" alt="{{ post.title | xml_escape }}">
+        </div>
       {% endif %}
       <div class="card-body d-flex flex-column">
         <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
