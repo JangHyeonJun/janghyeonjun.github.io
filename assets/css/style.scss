@@ -13,13 +13,19 @@
 
     .card {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+      }
     }
 
     .preview-img {
-      width: 6rem;
-      aspect-ratio: 1;
-      margin-right: 1rem;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin-bottom: 0.5rem;
       overflow: hidden;
       flex-shrink: 0;
       border-radius: $base-radius;
@@ -33,24 +39,30 @@
 
       @media (min-width: 768px) {
         width: 35%;
-        min-width: 8rem;
+        min-width: 12rem;
+        margin-bottom: 0;
+        margin-right: 1rem;
       }
     }
 
     .card-body {
       flex: 1;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .card-title {
       @extend %text-clip;
-      font-size: 1.5rem;
+      font-size: 1.35rem;
+      font-weight: 600;
       margin-bottom: 0.25rem;
     }
 
     .card-text {
       margin-bottom: 0;
-      font-size: 1rem;
+      font-size: 0.85rem;
 
       p {
         display: -webkit-box;

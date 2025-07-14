@@ -13,7 +13,7 @@ title: Home
 <div class="mb-4" id="recent-posts">
   {% for post in recent_posts %}
   <a href="{{ post.url | relative_url }}" class="card-wrapper d-block mb-3">
-    <div class="card post-preview flex-md-row-reverse">
+    <div class="card post-preview">
       {% if post.image %}
         {% assign src = post.image.path | default: post.image %}
         {% unless src contains '//' %}
