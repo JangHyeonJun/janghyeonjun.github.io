@@ -13,7 +13,7 @@ mermaid: false # 표생성 지원도구
 
 <div style="position: relative; width: 100%; padding-bottom: 84%; height: 0; overflow: hidden;">
     <iframe 
-        src="https://www.slideshare.net/slideshow/embed_code/key/pE98vdDJm3Bgx2?hostedIn=slideshare&page=upload" 
+        src="https://www.slideshare.net/slideshow/embed_code/key/doE3NJz4vNHOqr?hostedIn=slideshare&page=upload" 
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
         allowfullscreen>
     </iframe>
