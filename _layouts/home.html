@@ -40,6 +40,12 @@ refactor: true
   {% endfor %}
 {% endif %}
 
+{% if content %}
+  <div class="home-content mb-4">
+    {{ content }}
+  </div>
+{% endif %}
+
 <div id="post-list">
   {% for post in posts %}
     <a href="{{ post.url | relative_url }}" class="card-wrapper">
@@ -51,7 +57,7 @@ refactor: true
 
           {% assign src = post.image.path | default: post.image %}
           {% unless src contains '//' %}
-            {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
+            {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' | relative_url %}
           {% endunless %}
 
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
