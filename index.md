@@ -7,7 +7,44 @@ title: Home
 
 ---
 
-## 📝 Recent Post
+<div class="row home-content" id="home-content">
+  <div class="col-12 col-xxl-11">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+      <h2 class="mb-0">📝 Recent Posts</h2>
+      {% assign posts_per_page = 6 %}
+      {% assign total_posts = site.posts | size %}
+      {% assign total_pages = total_posts | divided_by: posts_per_page %}
+      {% if total_posts modulo posts_per_page != 0 %}
+        {% assign total_pages = total_pages | plus: 1 %}
+      {% endif %}
+      <nav
+        id="recent-pagination"
+        class="recent-pagination"
+        aria-label="Recent posts navigation"
+        data-total-pages="{{ total_pages }}"
+        data-posts-per-page="{{ posts_per_page }}"
+      >
+        <button type="button" class="page-arrow" data-pagination="prev" aria-label="Previous page" disabled>
+          ‹
+        </button>
+        <div class="page-numbers" role="list">
+          {% for page_index in (1..total_pages) %}
+            <button
+              type="button"
+              class="page-number{% if forloop.first %} active{% endif %}"
+              data-page="{{ page_index }}"
+              role="listitem"
+              aria-label="Go to page {{ page_index }}"
+            >
+              {{ page_index }}
+            </button>
+          {% endfor %}
+        </div>
+        <button type="button" class="page-arrow" data-pagination="next" aria-label="Next page" {% if total_pages == 1 %}disabled{% endif %}>
+          ›
+        </button>
+      </nav>
+    </div>
 
 {% assign recent_posts = site.posts | slice: 0, 5 %}
 <div class="mb-4" id="recent-posts">
@@ -30,8 +67,8 @@ title: Home
             {{ content | markdownify | strip_html | truncate: 200 | escape }}
           </p>
         </div>
-      </div>
+      </a>
+      {% endfor %}
     </div>
-  </a>
-  {% endfor %}
+  </div>
 </div>
