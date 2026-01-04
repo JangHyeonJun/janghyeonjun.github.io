@@ -9,9 +9,9 @@ title: Home
 
 ## 📝 Recent Post
 
-{% assign recent_posts = site.posts | slice: 0, 5 %}
+{% assign paginated_posts = paginator.posts | default: site.posts %}
 <div class="mb-4" id="recent-posts">
-  {% for post in recent_posts %}
+  {% for post in paginated_posts %}
   {% assign src = nil %}
   {% if post.image %}
     {% assign src = post.image.path | default: post.image %}
@@ -33,4 +33,12 @@ title: Home
     </div>
   </a>
   {% endfor %}
+
+  {% if paginator and paginator.total_pages > 1 %}
+    {% include post-paginator.html %}
+  {% endif %}
+
+  {% unless paginator %}
+    <p class="text-muted">Pagination is unavailable. Please ensure Jekyll pagination is configured.</p>
+  {% endunless %}
 </div>
