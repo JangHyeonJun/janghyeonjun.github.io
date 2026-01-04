@@ -40,6 +40,12 @@ refactor: true
   {% endfor %}
 {% endif %}
 
+{% if content %}
+  <div class="post-content mb-5">
+    {{ content }}
+  </div>
+{% endif %}
+
 <div id="post-list">
   {% for post in posts %}
     <a href="{{ post.url | relative_url }}" class="card-wrapper">
