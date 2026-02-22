@@ -23,7 +23,9 @@
     }
 
     .preview-img {
+      width: 100%;
       height: 10rem;
+      overflow: hidden;
 
       @extend %img-radius;
 
@@ -32,7 +34,6 @@
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
-
         @extend %img-radius;
       }
     }
@@ -141,19 +142,11 @@
 /* Tablet */
 @media all and (min-width: 768px) {
   #post-list {
-    %img-radius {
-      border-radius: 0 $base-radius $base-radius 0;
-    }
-
-    .card {
-      .preview-img {
-        width: 20rem;
-        height: 11.55rem; // can hold 2 lines each for title and content
-      }
+    .card.post-preview {
+      overflow: hidden;
 
       .card-body {
         min-height: 10.75rem;
-        width: 60%;
         padding: 1.75rem 1.75rem 1.25rem 1.75rem;
 
         .card-text {
@@ -165,6 +158,32 @@
             &:not(:first-child) {
               margin-left: 1.75rem;
             }
+          }
+        }
+      }
+
+      // 이미지가 있는 포스트만 2컬럼 그리드 적용
+      &:has(.preview-img) {
+        display: grid !important;
+        grid-template-columns: 65% 35%;
+
+        .card-body {
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+        .preview-img {
+          grid-column: 2;
+          grid-row: 1;
+          overflow: hidden;
+          border-radius: 0 $base-radius $base-radius 0;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 0 $base-radius $base-radius 0;
           }
         }
       }
